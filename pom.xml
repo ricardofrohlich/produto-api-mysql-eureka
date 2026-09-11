@@ -65,8 +65,7 @@
             <artifactId>mysql-connector-j</artifactId>
             <scope>runtime</scope>
         </dependency>
-        <!-- Cada starter tem seu companion de teste no Spring Boot 4; os dois abaixo
-             já trazem spring-boot-starter-test (JUnit 5, Mockito, AssertJ) transitivamente. -->
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa-test</artifactId>
@@ -94,6 +93,14 @@
             <artifactId>testcontainers-mysql</artifactId>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.boot
+            </groupId>
+            <artifactId>
+                spring-boot-starter-amqp
+            </artifactId>
+        </dependency>
+
     </dependencies>
 
     <build>
