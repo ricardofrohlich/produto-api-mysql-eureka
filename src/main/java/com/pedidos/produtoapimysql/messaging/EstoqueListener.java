@@ -34,7 +34,7 @@ public class EstoqueListener {
             // Se chegou aqui, a baixa foi realizada.
             rabbitTemplate.convertAndSend(
                     RabbitMQConfig.EXCHANGE,
-                    RabbitMQConfig.ROUTING_KEY_CONFIRMADO,
+//                    RabbitMQConfig.ROUTING_KEY_CONFIRMADO,
                     new ResultadoEstoque(
                             comando.getPedidoId(),
                             comando.getItemId(),
